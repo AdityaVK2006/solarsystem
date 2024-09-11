@@ -25,7 +25,7 @@ sun.position.z = -2
 const earthTex = new THREE.TextureLoader().load('textures/earth.jpg');
 const earth = new THREE.Mesh(new THREE.SphereGeometry(0.1), new THREE.MeshBasicMaterial({map : earthTex}));
 sun.add(earth);
-earth.position.x = 2
+earth.position.x = 0.8
 
 // const moonTex = new THREE.TextureLoader().load('textures/moon.jpg');
 // const moon = new THREE.Mesh(new THREE.SphereGeometry(0.1), new THREE.MeshBasicMaterial({map : moonTex}));
