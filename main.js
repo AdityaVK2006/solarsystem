@@ -18,14 +18,14 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.update();
 
 const sunTex = new THREE.TextureLoader().load('textures/sun.jpeg');
-const sun = new THREE.Mesh(new THREE.SphereGeometry(1.3), new THREE.MeshBasicMaterial({map : sunTex}));
+const sun = new THREE.Mesh(new THREE.SphereGeometry(0.3), new THREE.MeshBasicMaterial({map : sunTex}))
 scene.add(sun);
-sun.position.z = -3
+sun.position.z = -2
 
 const earthTex = new THREE.TextureLoader().load('textures/earth.jpg');
-const earth = new THREE.Mesh(new THREE.SphereGeometry(0.5), new THREE.MeshBasicMaterial({map : earthTex}));
+const earth = new THREE.Mesh(new THREE.SphereGeometry(0.1), new THREE.MeshBasicMaterial({map : earthTex}));
 sun.add(earth);
-earth.position.x = 3
+earth.position.x = 2
 
 // const moonTex = new THREE.TextureLoader().load('textures/moon.jpg');
 // const moon = new THREE.Mesh(new THREE.SphereGeometry(0.1), new THREE.MeshBasicMaterial({map : moonTex}));
